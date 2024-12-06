@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="google.css">
+</head>
+
+<body>
+<div class="logo-container">
+    <img src="https://i.ibb.co/d7GJbvq/google-37.png" alt="Logo" class="logo">
+    <h2 class="login-title">Fazer login</h2>
+</div>
+
+<div class="message-container">
+    <p class="google-message">Use sua Conta do Google</p>
+</div>
+
+<!-- Formulário de E-mail -->
+<form class="email-form" id="login-form">
+    <input type="email" id="email" name="email" placeholder="E-mail ou telefone" class="email-input" required>
+</form>
+
+<!-- Container para mensagens de erro -->
+<div id="error-container"></div>
+
+<div class="forgot-email">
+    <a href="#">Esqueceu o e-mail?</a>
+</div>
+
+<div class="visitor-mode">
+    <p>Não está no seu computador? Use o modo <br> visitante para fazer login com privacidade.</p>
+    <p><a href="#" class="visitor-link">Saiba mais sobre como usar o Modo <br> visitante</a></p>
+</div>
+
+<div class="create-account-container">
+    <a href="#" class="create-account-link">Criar conta</a>
+    <button type="button" id="next-button" class="next-button" disabled>Próxima</button>
+</div>
+
+<div class="language-container">
+    <span class="language-text">Português (Brasil)</span>
+    <span class="triangle">&#9660;</span> <!-- Triângulo para baixo -->
+</div>
+
+<div class="footer-links">
+    <span class="footer-link">Ajuda</span>
+    <span class="footer-link">Privacidade</span>
+    <span class="footer-link">Termos</span>
+</div>
+
+<script src="google.js"></script>
+</body>
+</html>

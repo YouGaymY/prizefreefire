@@ -1,0 +1,142 @@
+body {   text-align: justify; }
+
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    width: 350px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 35px;
+    color: #1877f2;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1877f2;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #166fe5;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.sign-up {
+    margin-top: 20px;
+}
+
+.sign-up p {
+    font-size: 14px;
+}
+
+.sign-up-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.sign-up-button:hover {
+    background-color: #36a420;
+}
+
+.facebook-logo {
+    width: 120px;  /* Ajuste o tamanho da logo conforme necessário */
+    margin-bottom: 20px;  /* Espaço abaixo da logo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo geral */
+}
+
+.form-container {
+    background-color: #ffffff; /* Fundo branco para os formulários */
+    padding: 20px;
+    margin-bottom: 20px; /* Espaço abaixo dos formulários */
+}
+
+.rodape {
+    position: absolute; /* Posiciona o rodapé na parte inferior */
+    bottom: 0; /* Garante que esteja no fim da página */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que esteja centralizado */
+    width: 100%; /* Preenche toda a largura */
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #f0f2f5; /* Fundo do rodapé */
+    color: #666; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno */
+    font-size: 12px; /* Texto pequeno */
+    border-top: 1px solid #f0f2f5; /* Linha superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra superior */
+}
+
+.imagem-meta {
+    width: 60px; /* Tamanho da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    margin-top: 20px;
+}

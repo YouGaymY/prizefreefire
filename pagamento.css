@@ -1,0 +1,138 @@
+/* Reset de margens e padding para garantir uma boa base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    overflow-y: auto; /* Habilita a rolagem vertical */
+}
+
+/* Container principal para centralizar o conteúdo */
+.container {
+    background-color: #222222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto; /* Espaço acima e abaixo */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Detalhes do produto */
+.produto-info {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Formatação para o valor do produto */
+.produto-preco {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #00ff01;
+}
+
+/* Configuração para a imagem do QR Code */
+.qr-code img {
+    width: 230px;
+    height: 230px;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Caixa para o QR Code */
+.qr-code {
+    margin-bottom: 30px;
+}
+
+/* Instruções para pagamento */
+.instrucoes {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Caixa de PIX */
+.pix-info {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 30px;
+    display: flex; /* Garante que o conteúdo se ajuste melhor */
+    flex-wrap: wrap; /* Permite a quebra do conteúdo, se necessário */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+    word-wrap: break-word; /* Quebra palavras longas, se necessário */
+    overflow-wrap: break-word; /* Força a quebra da palavra */
+}
+
+/* Ajustando a chave PIX */
+.pix-info p {
+    font-size: 0.8em;
+    word-wrap: break-word; /* Quebra a palavra */
+    overflow-wrap: break-word; /* Garante que a chave PIX se ajuste */
+    word-break: break-all; /* Permite quebrar o texto em qualquer ponto */
+    white-space: normal; /* Permite múltiplas linhas */
+    margin-top: 5px; /* Espaçamento superior */
+    font-weight: bold; /* Em negrito para destacar */
+    color: #fff; /* Cor da chave PIX */
+    background-color: #222222; /* Fundo para destacar */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Botão de finalizar pagamento */
+.button-pagar {
+    background-color: #00ff01;
+    color: #111111;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-pagar:hover {
+    background-color: #00ff01;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    .produto-info {
+        font-size: 1.3em;
+    }
+
+    .produto-preco {
+        font-size: 1.3em;
+    }
+}

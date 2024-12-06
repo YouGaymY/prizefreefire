@@ -1,0 +1,540 @@
+body {   text-align: justify; }
+
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222; /* Preto claro */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111; /* Preto mais escuro */
+    padding: 10px 30px;
+    height: 60px; /* Menor altura do cabeçalho */
+}
+
+/* Logo */
+header .logo-img {
+    width: 75px; /* Tamanho da logo ajustado */
+    height: auto;
+    margin-left: -18px; /* Move a logo mais para a esquerda */
+}
+
+/* Nome */
+header .site-name {
+    flex-grow: 1; /* Permite que o nome ocupe o restante do espaço */
+    text-align: center; /* Nome centralizado */
+    margin: 0 0px; /* Espaço de 10px entre a logo, o nome e o botão */
+    margin-right: 13px; 
+}
+
+header .site-name h1 {
+    font-size: 2.0em; /* Menor tamanho da fonte */
+    color: #00FF00;
+    margin: 0;
+}
+
+/* Botão "Entrar" à direita */
+header .entrar {
+    margin-left: auto; /* Move o botão para a extrema direita */
+    margin-right: -15px; /* Adiciona mais espaço à direita para mover mais para a direita */
+}
+
+header .entrar button {
+    background-color: #00FF00;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .entrar button:hover {
+    background-color: #00CC00;
+}
+
+/* Galeria com Rolagem Horizontal */
+.image-gallery {
+    display: flex;
+    overflow-x: auto; /* Permite a rolagem horizontal */
+    padding: 20px;
+    gap: 20px; /* Espaço entre as imagens */
+}
+
+.image-gallery img {
+    width: 300px; /* Tamanho das imagens */
+    height: 200px; /* Altura das imagens */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+
+/* Introdução */
+.intro {
+    padding: 30px;
+    background-color: #333333; /* Preto mais claro */
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 1.8em;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* Seção de Recompensas */
+.recompensas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #444444; /* Tom mais claro de preto */
+}
+
+.recompensa {
+    background-color: #555555;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.recompensa img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.recompensa h3 {
+    color: #00FF00;
+    font-size: 1.4em;
+}
+
+.recompensa p {
+    color: #cccccc;
+    font-size: 1em;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #111111;
+    padding: 10px;
+    margin-top: 30px;
+}
+/* Título "Prêmios Grátis" */
+.prêmios-gratis {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.prêmios-gratis h2 {
+    font-size: 2em;
+    color: #00FF00; /* Cor verde para destacar o título */
+    font-weight: bold;
+    text-transform: uppercase; /* Deixa o título em maiúsculas */
+    border-bottom: 2px solid #00FF00; /* Linha abaixo do título */
+    padding-bottom: 10px;
+}
+/* Seção de Produtos */
+.produtos {
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner */
+    padding: 20px;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Contêiner para os Produtos */
+.produtos-container {
+    display: flex;
+    gap: 20px; /* Espaço entre os produtos */
+    padding-left: 20px; /* Espaço no lado esquerdo */
+}
+
+/* Estilo dos Produtos */
+.produto {
+    background-color: #555555;
+    border-radius: 10px;
+    width: 250px; /* Largura ajustada dos produtos */
+    height: 300px; /* Altura ajustada */
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0; /* Evita encolher os produtos */
+}
+
+/* Imagens dos Produtos */
+.produto img {
+    width: 100%;
+    height: 180px; /* Altura ajustada */
+    object-fit: cover; /* Garante que a imagem preencha o espaço */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Espaço entre imagem e texto */
+}
+
+/* Títulos e Texto */
+.produto h3 {
+    color: #00FF00;
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+.produto p {
+    color: #cccccc;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Botão de Compra */
+.produto button {
+    background-color: #00FF00;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.produto button:hover {
+    background-color: #00CC00;
+}
+/* Seção de Produtos */
+.produtos {
+    display: flex;
+    justify-content: flex-start; /* Alinha os produtos no início */
+    padding: 20px 0 20px 50px; /* Espaço adicional à esquerda para mover produtos */
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-behavior: smooth; /* Rolagem suave */
+    background-color: #111; /* Fundo para destacar os produtos */
+}
+
+/* Contêiner para Produtos */
+.produtos-container {
+    display: flex;
+    gap: 20px; /* Espaço entre os produtos */
+    padding: 10px; /* Espaço interno do contêiner */
+    flex-wrap: nowrap; /* Impede quebra de linha */
+}
+
+/* Adicionar espaço no último produto */
+.produtos-container .produto:last-child {
+    margin-right: 50px; /* Espaço adicional à direita */
+}
+
+/* Estilo dos Produtos */
+.produto {
+    background-color: #222; /* Cor do fundo dos produtos */
+    border-radius: 10px;
+    width: 200px; /* Largura dos produtos */
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombras para destaque */
+    flex-shrink: 0; /* Evita que os produtos encolham */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Imagem dos Produtos */
+.produto img {
+    width: 100%;
+    height: 150px; /* Altura ajustada */
+    object-fit: cover; /* Preenche o espaço sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 10px;
+}
+
+/* Título dos Produtos */
+.produto h3 {
+    color: #00FF00;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Texto de Descrição */
+.produto p {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Botão de Compra */
+.produto button {
+    background-color: #00FF00;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.produto button:hover {
+    background-color: #00CC00;
+}
+
+/* Barra de Rolagem Personalizada */
+.produtos::-webkit-scrollbar {
+    height: 10px; /* Altura da barra */
+}
+
+.produtos::-webkit-scrollbar-thumb {
+    background-color: #00FF00;
+    border-radius: 5px;
+}
+
+.produtos::-webkit-scrollbar-track {
+    background-color: #333;
+}
+/* Título Seção Store */
+.titulo-store {
+    text-align: center;
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+}
+
+.titulo-store h2 {
+    font-size: 1.9em; /* Tamanho da fonte */
+    color: #00FF00; /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    font-family: 'Arial', sans-serif; /* Fonte */
+    margin: 10;
+}
+/* Contêiner das Fileiras */
+.produtos-fileiras {
+    display: flex;
+    flex-direction: column; /* Fileiras organizadas verticalmente */
+    gap: 20px; /* Espaço entre as fileiras */
+    padding: 20px;
+}
+
+/* Cada Fileira */
+.fileira {
+    display: flex;
+    justify-content: flex-start; /* Alinha os produtos no início */
+    gap: 20px; /* Espaço entre os produtos */
+    overflow-x: auto; /* Rolagem horizontal ativada */
+    scroll-behavior: smooth; /* Rolagem suave */
+    padding-left: 20px; /* Espaço à esquerda da primeira fileira */
+}
+
+/* Produtos */
+.produto {
+    background-color: #222; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 200px; /* Largura dos produtos */
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    flex-shrink: 0; /* Evita que os produtos encolham */
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Imagens dos Produtos */
+.produto img {
+    width: 100%;
+    height: 150px; /* Altura ajustada */
+    object-fit: cover; /* Preenche sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 10px;
+}
+
+/* Título dos Produtos */
+.produto h3 {
+    color: #00FF00;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Texto de Descrição */
+.produto p {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Botão de Compra */
+.produto button {
+    background-color: #00FF00;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.produto button:hover {
+    background-color: #00CC00;
+}
+
+/* Remove a Barra de Rolagem */
+.fileira::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem */
+}
+.produto p.preco {
+    font-size: 1.5em; /* Define um tamanho maior para o preço */
+    font-weight: bold; /* Negrito para destaque */
+    color: #00FF00; /* Cor do preço */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+}
+.lembrete-cadastro {
+    background-color: #222; /* Fundo escuro */
+    color: #00FF00; /* Texto em verde */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #00FF00; /* Borda em verde */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1.2em; /* Tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px auto; /* Espaçamento em cima e embaixo */
+    max-width: 600px; /* Limita a largura máxima */
+}
+.informativo {
+    font-size: 0.8em; /* Fonte pequena */
+    color: #aaa; /* Cor do texto em cinza claro */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin: 20px auto; /* Espaçamento em volta */
+    max-width: 800px; /* Largura máxima */
+    text-align: justify; /* Justifica o texto */
+    padding: 10px; /* Espaçamento interno */
+}
+.informativo {
+    font-size: 0.8em; /* Fonte pequena */
+    color: #aaa; /* Cor do texto em cinza claro */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin: 20px auto; /* Espaçamento em volta */
+    max-width: 800px; /* Largura máxima */
+    text-align: justify; /* Justifica o texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Centraliza o botão dentro de um container */
+.botao-container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Estilo do botão */
+.voltar-topo {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #00FF00; /* Cor de fundo verde */
+    color: black; /* Cor do texto preta */
+    border: none; /* Remove borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho de fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.voltar-topo:hover {
+    background-color: #009900; /* Cor do botão ao passar o mouse */
+}
+.metodos-pagamento {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+    margin-top: 30px; /* Espaçamento superior */
+}
+
+.img-pagamento {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+.metodos-pagamento-titulo {
+    text-align: center; /* Centraliza o título */
+    margin-top: 40px; /* Espaço superior antes do título */
+    margin-bottom: 20px; /* Espaço inferior abaixo do título */
+}
+
+.metodos-pagamento-titulo h2 {
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Deixa o título em negrito */
+}
+.copyright {
+    text-align: center; /* Centraliza o texto */
+    font-size: 0.8em; /* Fonte pequena */
+    color: #aaa; /* Cor do texto cinza claro */
+    margin-top: 40px; /* Espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.copyright p {
+    margin: 0; /* Remove margens extras */
+}
+.btn-entrar {
+    background-color: #00FF00; /* Verde claro */
+    color: black; /* Cor do texto preta */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    text-align: center; /* Alinha o texto no centro */
+    text-decoration: none; /* Remove qualquer sublinhado (removendo linha abaixo) */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de pointer */
+    display: inline-block; /* Garante o comportamento como bloco para link */
+    margin-right: -15px; 
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.btn-entrar:hover {
+    background-color: #00FF00; /* Cor mais escura ao passar o mouse */
+}
+
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 80%;
+    max-width: 400px;
+    background-color: #333333;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1600;
+    text-align: center;
+    display: none; /* Ocultada por padrão */
+    margin-top: 100px;
+}
+
+.popup p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.fechar-popup {
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.fechar-popup:hover {
+    color: #ffffff;
+}

@@ -1,0 +1,99 @@
+body {   text-align: justify; }
+
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222; /* Preto claro */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111; /* Preto mais escuro */
+    padding: 10px 30px;
+    height: 60px; /* Menor altura do cabeçalho */
+}
+
+/* Logo */
+header .logo-img {
+    width: 75px; /* Tamanho da logo ajustado */
+    height: auto;
+    margin-left: -18px; /* Move a logo mais para a esquerda */
+}
+
+/* Nome */
+header .site-name {
+    flex-grow: 1; /* Permite que o nome ocupe o restante do espaço */
+    text-align: center; /* Nome centralizado */
+    margin: 0 0px; /* Espaço de 10px entre a logo, o nome e o botão */
+    margin-right: 13px; 
+}
+
+header .site-name h1 {
+    font-size: 2.0em; /* Menor tamanho da fonte */
+    color: #00FF00;
+    margin: 0;
+}
+
+/* Botão "voltar" à direita */
+header .voltar {
+    margin-left: auto; /* Move o botão para a extrema direita */
+    margin-right: -15px; /* Adiciona mais espaço à direita para mover mais para a direita */
+}
+
+.btn-voltar {
+    background-color: #00FF00; /* Verde #00FF00 */
+    color: black; /* Cor do texto preta */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    text-align: center; /* Alinha o texto no centro */
+    text-decoration: none; /* Remove qualquer sublinhado */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de pointer */
+    display: inline-block; /* Garante o comportamento como bloco para link */
+    margin-right: -17px; 
+}
+
+.btn-voltar:hover {
+    background-color: #00CC00; /* Cor mais escura ao passar o mouse */
+}
+
+.titulo-login {
+    color: #00FF00; /* Cor verde */
+    text-align: center; /* Centraliza o título */
+    font-size: 24px; /* Tamanho da fonte */
+    margin-top: 20px; /* Espaço acima do título */
+}
+
+.mensagem-seguranca {
+    color: #555555; /* Cor do texto da mensagem */
+    text-align: center; /* Centraliza o texto */
+    font-size: 16px; /* Tamanho da fonte da mensagem */
+    margin-top: 10px; /* Espaço acima da mensagem */
+    margin-bottom: 30px; /* Espaço abaixo da mensagem */
+}
+
+.imagens-clicaveis {
+    display: flex; /* Organiza as imagens lado a lado */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 40px; /* Espaço entre as imagens */
+    margin-top: 20px; /* Espaço acima das imagens */
+}
+
+.imagem-clicavel {
+    width: 60px; /* Largura das imagens */
+    height: auto; /* Altura automática para manter a proporção */
+    cursor: pointer; /* Cursor de pointer ao passar sobre a imagem */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    transition: transform 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.imagem-clicavel:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+}a

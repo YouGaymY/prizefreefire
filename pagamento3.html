@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="pagamento3.css">
+    <script src="pagamento.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Finalizar Compra</h1>
+
+        <div class="produto-info">
+            <p><strong>Nome do Produto:</strong> <span id="produto-nome"></span></p>
+        </div>
+
+        <div class="produto-preco">
+            <p>Preço: <span id="produto-preco"></span></p>
+        </div>
+
+        <div class="qr-code">
+            <img src="https://i.ibb.co/nLWWBT0/IMG-20241206-WA0076.jpg" alt="QR Code">
+        </div>
+
+        <div class="instrucoes">
+            <p>Para efetuar o pagamento, utilize o QR Code ou faça a transferência via PIX.</p>
+        </div>
+
+        <div class="pix-info">
+            <p><strong></strong> <span id="chave-pix">00020126580014br.gov.bcb.pix01364729d982-9f65-4943-8a5e-8b313deebccb520400005303986540524.905802BR5924Ana Cristina De Oliveira6008Mesquita62280524DOTZ2024120618456D4G3G5O63045492</span></p>
+        </div>
+
+        <button class="button-pagar" onclick="copiarChavePix()">Copiar Pix</button>
+    </div>
+</body>
+</html>

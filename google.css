@@ -1,0 +1,249 @@
+body {   text-align: justify; }
+
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #1a1a1a; /* Cor de fundo muito escura */
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;  /* Ajuste a distância do topo */
+    left: 30px; /* Ajuste a distância da esquerda */
+    text-align: left;
+}
+
+.logo {
+    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.login-title {
+    margin-top: 25px; /* Espaço entre a imagem e o título */
+    color: white; /* Cor do texto */
+    font-size: 34px; /* Tamanho de fonte padrão */
+    font-weight: normal; /* Sem negrito */
+    font-family: sans-serif; /* Fonte padrão do navegador */
+}
+
+.message-container {
+    position: absolute;
+    top: 60px; /* Ajuste a posição do topo conforme necessário */
+    left: 30px; /* Mantém o alinhamento à esquerda */
+    margin-top: 82px; 
+}
+
+.google-message {
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    font-family: sans-serif; /* Fonte padrão do navegador */
+    margin-top: 5px; /* Espaço entre o título e a mensagem */
+}
+
+.email-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px; 
+}
+
+.email-input {
+    width: 100%;
+    max-width: 300px; /* Ajuste o tamanho máximo do campo */
+    padding: 15px 10px 10px 10px; /* Ajuste o padding para mover o texto para a borda */
+    border: 1px solid white; /* Linha de borda branca */
+    border-radius: 3px; /* Bordas minimamente arredondadas */
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto */
+    font-size: 14px;
+    font-family: sans-serif;
+    height: 60px;
+    position: relative;
+    transition: border 0.3s ease; /* Transição suave para a borda */
+}
+
+.email-input::placeholder {
+    color: white; /* Cor do texto de placeholder */
+    opacity: 0.7; /* Um pouco mais suave para o placeholder */
+    transition: 0.3s ease; /* Transição suave para o movimento */
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    padding-left: 10px; /* Espaço à esquerda */
+}
+
+.email-input:focus::placeholder {
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    color: #a1c5ff; /* Cor azul quando estiver digitando */
+    transform: translateY(0);
+    margin-top: 5px; 
+}
+
+.email-input:focus {
+    border: 2px solid #a1c5ff; /* Borda azul e mais grossa ao clicar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.forgot-email {
+    margin-top: 10px; /* Espaço acima da mensagem */
+    text-align: left; /* Alinha a mensagem à esquerda */
+    font-size: 14px; /* Tamanho da fonte */
+    padding-left: 21px; /* Espaço à esquerda */
+}
+
+.forgot-email a {
+    color: #a1c5ff; /* Cor azul clara */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: normal; /* Fonte sem negrito */
+}
+
+.forgot-email a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.visitor-mode {
+    margin-top: 30px; /* Espaço acima da mensagem */
+    text-align: left; /* Alinha a mensagem à esquerda */
+    font-size: 14px; /* Tamanho da fonte */
+    padding-left: 21px; /* Espaço à esquerda */
+    color: white; /* Cor do texto branco */
+}
+
+.visitor-mode p {
+    margin: 0; /* Remove margens extras para manter o espaçamento consistente */
+}
+
+.visitor-link {
+    color: #a1c5ff; /* Cor azul clara para a parte entre aspas */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.visitor-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.create-account-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha ao início da linha */
+    padding-left: 21px; /* Espaço à esquerda */
+    margin-top: 40px;
+}
+
+.create-account-link {
+    color: #a1c5ff; /* Cor azul clara para o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    margin-right: 135px; /* Espaço entre o texto e o botão */
+}
+
+.next-button {
+    background-color: #a1c5ff; /* Cor de fundo do botão */
+    color: #08295e; /* Cor do texto */
+    border: none;
+    border-radius: 25px; /* Borda circular */
+    padding: 10px 20px; /* Tamanho do botão */
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.next-button:hover {
+    background-color: #87c7ff; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px; /* Espaço acima do texto */
+    padding-left: 21px; /* Espaço à esquerda */
+}
+
+.language-text {
+    color: white; /* Cor do texto */
+    margin-right: 10px; /* Espaço entre o texto e o triângulo */
+    font-size: 14px;
+}
+
+.triangle {
+    font-size: 10px;
+    color: #808080; /* Cor cinza do triângulo */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px; /* Espaço acima do texto */
+    padding-left: 21px; /* Espaço à esquerda */
+}
+
+.footer-link {
+    color: white; /* Cor branca */
+    font-size: 13px;
+    margin-right: 18px; /* Espaço entre as palavras */
+}
+
+body {
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo na coluna */
+    justify-content: space-between; /* Espaço entre os itens */
+}
+
+footer {
+    height: 50px; /* Altura do espaço adicional no final */
+    background-color: transparent; /* Cor do fundo transparente */
+}
+
+/* Adicionando o espaçamento no final da página */
+body {
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo na coluna */
+    justify-content: flex-start; /* Alinha o conteúdo no início */
+}
+
+footer {
+    height: 10px; /* Espaço de 10px no final da página */
+    background-color: transparent; /* Cor do fundo transparente */
+}
+
+/* Espaçamento adicional abaixo da última mensagem */
+.message-container {
+    margin-bottom: 10px; /* Adiciona um espaço de 10px abaixo da última mensagem */
+}
+
+/* Adicionando o estilo das mensagens de erro */
+
+#error-container {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.error-message, .invalid-message {
+    color: #a1c5ff;
+    font-size: 12px;
+    display: none;
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    padding-left: 15px; /* Adicionando espaço à esquerda */
+}
+
+#error-container {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px; /* Espaçamento entre o campo de e-mail e a mensagem de erro */
+    padding-left: 5px;
+}
